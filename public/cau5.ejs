@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD SINH VIEN</title>
+    <!-- Bootstrap v5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-lg-2">
+         
+        </div>
+        <div class="col-9">
+          <h1>Tìm kiếm thực thể theo id </h1>
+          <!-- link POST: /v1/tim-kiem/cau5 -->
+          <form method="POST" action="/v1/tim-kiem/cau5">
+            <div class="mb-3">
+              <label class="form-label">Id Lop</label>
+              <input type="text" class="form-control" name="id" />
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

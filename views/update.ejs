@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Lớp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<style>
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-form{
+        background-color: rgb(202, 177, 177);
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+    }
+    label{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container main">
+        <div class="col-3"></div>
+        <div class="col-6 box-form">
+            <form action="/update" method="POST">
+                <h1 class="text-center" style="font-weight: 800;">Update</h1>
+                <div class="form-group">
+                    <label>Mã Lớp: </label>
+                    <input class="form-control" type="text" name="id" placeholder="Mã lớp">
+                </div>
+                <div class="form-group">
+                    <label>Tên Lớp: </label>
+                    <input class="form-control" type="text" name="tenLop" placeholder="IT19A2B">
+                </div>
+                <div class="form-group">
+                    <label>Mã Khoa: </label>
+                    <input class="form-control" type="text" name="maKhoa" placeholder="CNTT">
+                </div>
+                <div class="button">
+                    <input id="add-btn" class="btn btn-primary" type="submit" value="Update">
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</body>
+
+</html>
